@@ -1,6 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import { dot } from 'node:test/reporters';
+//import { dot } from 'node:test/reporters';
 
 dotenv.config();
 
@@ -9,7 +9,7 @@ app.use(express.json());
 
 import buildingInsights from './Routes/buildingInsightsRoutes.js';
 
-app.use('./api/solar', buildingInsightsRoutes);
+app.use('./api/solar', buildingInsights);
 
 app.get("/", (req,res) => {
     res.send("Google BuildingInsight is running");
@@ -18,6 +18,6 @@ app.get("/", (req,res) => {
 const PORT = process.env.PORT
 app.listen (PORT, () => console.log('Server running....'));
 
-
+  
 
 

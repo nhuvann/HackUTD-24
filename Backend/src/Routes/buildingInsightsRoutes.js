@@ -1,9 +1,11 @@
 import express from 'express';
-import { fetchBuildingInsights } from '../controllers/BuildingInsightsControllers';
+import { fetchBuildingInsights } from '../controllers/buildingInsightsControllers.js';
 
+// Initialize the router (ensure the parentheses are included)
+const router = express.Router();
 
-const router = express.Router;
+// Define the route for fetching building insights
+router.get('/buildingInsights', fetchBuildingInsights);
 
-router.get('/building-insights', fetchBuildingInsights);
-
-export default router; 
+// Export the router to be used in app.js
+export default router;
