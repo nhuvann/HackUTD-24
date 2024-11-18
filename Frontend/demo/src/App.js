@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from 'Frontend\demo\src\Assets\logo.png';
 import './App.css';
 
 function App() {
@@ -11,11 +11,11 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://reactjs.org" //// I NEED TO npm build then drop the built version into Netifly
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Sustainability App
         </a>
       </header>
     </div>

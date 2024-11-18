@@ -2,13 +2,13 @@
   "name": "hellosustainability",
   "version": "1.0.0",
   "description": "a website to help property managers provide sustainable buildings to their tenants",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "\"test\": \"echo \\\"Error: no test specified\\\" && exit 1\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nhuvann/HackUTD-24.git"
+    "url": "https://github.com/nhuvann/HackUTD-24.git"
   },
   "keywords": [
     "[]"
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/nhuvann/HackUTD-24#readme",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "nodemon": "^3.1.7"
   }
