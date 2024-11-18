@@ -1,0 +1,44 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+  }
+  
+  .logo-img {
+    height: 50px;
+  }
+  
+  .links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .toggle_btn {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .links {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .links.active {
+      display: flex;
+    }
+  
+    .toggle_btn {
+      display: block;
+    }
+  }
+  
