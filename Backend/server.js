@@ -1,13 +1,11 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-require('dotenv').config({path: 'Backend\.env'});
+
 
 const app = express();
-const PORT = process.env.PORT ||3000;
-const apiKey= process.env.GOOGLE_API_KEY;
+const PORT = process.env.PORT ;
 
-console.log("Port is: ", PORT);
-console.log("API KEY is: ", apiKey);
 
 app.use(cors());
 app.use(express.json());

@@ -1,3 +1,5 @@
+require('dotenv').config({path: 'Backend\.env'});
+
 const axios = require('axios');
 
 // Fetch closest building insights
